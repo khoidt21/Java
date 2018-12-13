@@ -1,0 +1,30 @@
+﻿Bài 1:
+Xây dựng bản thiết kế hướng đối tượng gồm:
+- Các loại phương tiện: xe hơi, xe máy, xe đạp
+- các phương tiện có các thuộc tính chung: số bánh, sức chứa, năm sản xuất, v.v.. (học viên tự bổ sung thêm các thuộc tính)
+- các phương tiện đều có phương thức chung là move(di chuyển)
+- mỗi loại phương tiện có các thuộc tính riêng của nó (học viên tự bổ sung thêm các thuộc tính)
+- mỗi loại phương tiện có 1 phương thức riêng (học viên tự bổ sung thêm các phương thức): phương thức này in ra màn hình 1 dòng text, ví dụ "I'm moving by 2 wheels..."
+
+Bài 2:
+Viết chương trình thực hiện các công việc sau:
+- Khai báo các class tương ứng với các phương tiện trên
+- Khởi tạo 2 đối tượng xe hơi, 3 đối tượng xe máy, 5 đối tượng xe đạp
+- Thực thi các phương thức của các đối tượng vừa tạo
+- Khuyến khích dùng quan hệ kế thừa
+
+Bài 3:
+Viết class Employee gồm các thuộc tính:
+- name
+- age
+- address
+- salary
+- hoursOfWork
+- 2 hàm khởi tạo không tham số và có đầy đủ các tham số
+- các hàm getter/setter
+- toString(): trả về chuỗi thể hiện các thông tin của nhân viên
+- getBonus(): tính tiền thưởng của nhân viên
++ nếu tổng số giờ làm của nhân viên >=200 thì bonus = salary * 20%
++ nếu tổng số giờ làm của nhân viên < 200 và >=100 thì bunus = salary * 10%
++ nếu tổng số giờ làm của nhân viên < 100 thì bonus = 0
+Viết chương trình khởi tạo 5 đối tượng Employee với các thông số khác nhau, in ra màn hình thông tin của từng nhân viên và thưởng tương ứng.
