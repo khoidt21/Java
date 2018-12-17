@@ -17,6 +17,13 @@ public class Employee {
 		this.salary = salary;
 		this.hoursOfWork = hoursOfWork;
 	}
+	public void display() {
+		System.out.println("Name: " + name);
+		System.out.println("Age: " + age);
+		System.out.println("Address: " + address);
+		System.out.println("Salary: " + salary);
+		System.out.println("Hours Of Work: " + hoursOfWork);
+	}
 	
 	public String getName() {
 		return name;
@@ -48,18 +55,14 @@ public class Employee {
 	public void setHoursOfWork(int hoursOfWork) {
 		this.hoursOfWork = hoursOfWork;
 	}
-	public double calSalaryBonus(int houseWork,int tSalary) {
+	public double calSalaryBonus() {
 		
-		if(houseWork >= 200) {
-			return tSalary*20/100;
+		if( hoursOfWork >= 200) {
+			return salary *0.2;
 		}
-		else if(houseWork < 200 && houseWork >= 100) {
-			return tSalary*10/100; 
+		else if(hoursOfWork < 200 && hoursOfWork >= 100) {
+			return salary *0.1; 
 		}
-		else {
 			return 0;
-		}
-		
-		
 	}
 }
